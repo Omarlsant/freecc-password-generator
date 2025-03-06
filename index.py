@@ -1,4 +1,4 @@
-# Step 4: Just before them, add a comment saying Define the possible characters for the password.
+# Step 5: Now declare a variable named all_characters and assign it the result of concatenating your existing variables.
 
 import string
 
@@ -6,3 +6,5 @@ import string
 letters = string.ascii_lowercase
 digits = string.digits
 symbols = string.punctuation
+
+all_characters = letters + digits + symbols
