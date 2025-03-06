@@ -1,4 +1,4 @@
-# Step 6: Your all_characters variable is a string formed by all lowercase and uppercase letters, all the 10 digits and several special characters. Just before it, add a comment saying Combine all characters.
+# Step 7: Now print the all_characters variable to see what it looks like.
 
 import string
 
@@ -9,3 +9,4 @@ symbols = string.punctuation
 
 # Combine all characters
 all_characters = letters + digits + symbols
+print(all_characters)
