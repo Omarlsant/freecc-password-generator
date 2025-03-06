@@ -1,4 +1,4 @@
-# Step 8: At the top of your code, import the random module.
+# Step 9: Call the random() function from the random module and print the result.
 
 import string
 import random
@@ -11,3 +11,4 @@ symbols = string.punctuation
 # Combine all characters
 all_characters = letters + digits + symbols
 print(all_characters)
+print(random.random())
