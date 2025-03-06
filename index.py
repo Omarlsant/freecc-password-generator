@@ -1,5 +1,7 @@
-# Step 2: You can access the utilities defined inside the imported module through the dot notation. The dot notation works by appending a dot followed by the utility name to the module name. For example, here's how to access the ascii_lowercase constant:
+# Step 3: Declare two new variables named digits and symbols and assign them string.digits and string.punctuation, respectively.
 
 import string
 
 letters = string.ascii_lowercase
+digits = string.digits
+symbols = string.punctuation
