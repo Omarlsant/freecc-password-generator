@@ -1,6 +1,7 @@
-# Step 7: Now print the all_characters variable to see what it looks like.
+# Step 8: At the top of your code, import the random module.
 
 import string
+import random
 
 # Define the possible characters for the password.
 letters = string.ascii_lowercase
