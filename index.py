@@ -1,4 +1,4 @@
-# Step 15: At the bottom of your function, declare a password variable and assign an empty string to this variable.
+# Step 16: Below your new variable, add a comment saying Generate password.
 
 import secrets
 import string
@@ -12,3 +12,4 @@ def generate_password(length):
     # Combine all characters
     all_characters = letters + digits + symbols
     password = ''
+    # Generate password
