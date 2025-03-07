@@ -1,4 +1,4 @@
-# Step 17: Next, write a for loop with i as the loop variable. Use the range() function to iterate up to the value of the length. Inside the loop, use the addition assignment operator to add a random character from all_characters to the current value of password. Use the choice() function from the secrets module for that.
+# Step 18: A standalone single underscore is used to represent a value you don't care or that won't be used in your code. Your iteration variable is not actually used. Modify your i variable into a single underscore.
 
 import secrets
 import string
@@ -14,5 +14,5 @@ def generate_password(length):
     password = ''
     # Generate password
 
-    for i in range(length):
+    for _ in range(length):
         password += secrets.choice(all_characters)
