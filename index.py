@@ -1,4 +1,4 @@
-# Step 11: Instead of importing random, import the secrets module. Then change the print() call to use secrets.choice(all_characters).
+# Step 12: Although the effect might seem equal to random.choice(), secrets ensure you the most secure source of randomness that your operating system can provide. Now, delete your two print() calls.
 
 import secrets
 import string
@@ -10,5 +10,3 @@ symbols = string.punctuation
 
 # Combine all characters
 all_characters = letters + digits + symbols
-print(all_characters)
-print(secrets.choice(all_characters))
