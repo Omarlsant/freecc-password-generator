@@ -1,9 +1,9 @@
-# Step 13: Declare a generate_password function and write all your code except the import lines inside the function body.
+# Step 14: Your generate_password function needs a few parameters. Start by adding a length parameter.
 
 import secrets
 import string
 
-def generate_password():
+def generate_password(length):
     # Define the possible characters for the password.
     letters = string.ascii_lowercase
     digits = string.digits
