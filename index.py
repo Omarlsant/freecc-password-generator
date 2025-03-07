@@ -1,7 +1,7 @@
-# Step 10: Modify your print() call to use the choice() function and pass all_characters as the argument.
+# Step 11: Instead of importing random, import the secrets module. Then change the print() call to use secrets.choice(all_characters).
 
+import secrets
 import string
-import random
 
 # Define the possible characters for the password.
 letters = string.ascii_lowercase
@@ -11,4 +11,4 @@ symbols = string.punctuation
 # Combine all characters
 all_characters = letters + digits + symbols
 print(all_characters)
-print(random.choice(all_characters))
+print(secrets.choice(all_characters))
