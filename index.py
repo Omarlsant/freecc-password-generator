@@ -1,4 +1,4 @@
-# Step 19: After the loop, add a return statement to your function so it returns the password variable.
+# Step 20: Finally, declare a variable new_password and assign it the result of calling generate_password. Pass 8 as the argument to your generate_password call.
 
 import secrets
 import string
@@ -17,3 +17,5 @@ def generate_password(length):
     for _ in range(length):
         password += secrets.choice(all_characters)
         return password
+
+new_password = generate_password(8)
