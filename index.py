@@ -1,4 +1,4 @@
-# Step 16: Below your new variable, add a comment saying Generate password.
+# Step 17: Next, write a for loop with i as the loop variable. Use the range() function to iterate up to the value of the length. Inside the loop, use the addition assignment operator to add a random character from all_characters to the current value of password. Use the choice() function from the secrets module for that.
 
 import secrets
 import string
@@ -13,3 +13,6 @@ def generate_password(length):
     all_characters = letters + digits + symbols
     password = ''
     # Generate password
+
+    for i in range(length):
+        password += secrets.choice(all_characters)
