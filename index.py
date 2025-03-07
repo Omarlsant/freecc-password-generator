@@ -1,12 +1,13 @@
-# Step 12: Although the effect might seem equal to random.choice(), secrets ensure you the most secure source of randomness that your operating system can provide. Now, delete your two print() calls.
+# Step 13: Declare a generate_password function and write all your code except the import lines inside the function body.
 
 import secrets
 import string
 
-# Define the possible characters for the password.
-letters = string.ascii_lowercase
-digits = string.digits
-symbols = string.punctuation
+def generate_password():
+    # Define the possible characters for the password.
+    letters = string.ascii_lowercase
+    digits = string.digits
+    symbols = string.punctuation
 
-# Combine all characters
-all_characters = letters + digits + symbols
+    # Combine all characters
+    all_characters = letters + digits + symbols
