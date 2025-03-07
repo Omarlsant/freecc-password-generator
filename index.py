@@ -1,4 +1,4 @@
-# Step 18: A standalone single underscore is used to represent a value you don't care or that won't be used in your code. Your iteration variable is not actually used. Modify your i variable into a single underscore.
+# Step 19: After the loop, add a return statement to your function so it returns the password variable.
 
 import secrets
 import string
@@ -16,3 +16,4 @@ def generate_password(length):
 
     for _ in range(length):
         password += secrets.choice(all_characters)
+        return password
