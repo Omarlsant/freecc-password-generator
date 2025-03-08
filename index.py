@@ -1,4 +1,4 @@
-# Step 27: The re module allows you to use regular expressions in your code. You will learn more about regular expressions very soon. For now, add an import statement at the top of your code to import the re module.
+# Step 28: The compile() function from the re module compiles the string passed as the argument into a regular expression object that can be used by other re methods. Declare a new pattern variable and assign the value of re.compile('i') to this variable.
 
 import re
 import secrets
@@ -23,3 +23,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
 # new_password = generate_password(8)
 # print(new_password)
+
+pattern = re.compile('i')
