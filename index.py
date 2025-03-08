@@ -1,9 +1,9 @@
-# Step 22: It seems all fine, but it would be nice to have a way to check that the generated password complies to specific features. For now, comment out the last two lines of your code.
+# Step 23: Modify your function declaration by adding nums, special_chars, uppercase, and lowercase in this order after the existent length parameter.
 
 import secrets
 import string
 
-def generate_password(length):
+def generate_password(length, nums, special_chars, uppercase, lowercase):
     # Define the possible characters for the password.
     letters = string.ascii_lowercase
     digits = string.digits
