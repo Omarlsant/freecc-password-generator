@@ -1,4 +1,4 @@
-# Step 21: Check the result by printing your new variable.
+# Step 22: It seems all fine, but it would be nice to have a way to check that the generated password complies to specific features. For now, comment out the last two lines of your code.
 
 import secrets
 import string
@@ -18,5 +18,5 @@ def generate_password(length):
         password += secrets.choice(all_characters)
         return password
 
-new_password = generate_password(8)
-print(new_password)
+# new_password = generate_password(8)
+# print(new_password)
