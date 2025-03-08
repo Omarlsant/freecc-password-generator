@@ -1,5 +1,6 @@
-# Step 26: Your constraints list is going to store tuples. The first item of each tuple will be a constraint parameter. Modify the constraints list assignment by adding a tuple to your list. Use nums as the first item and an empty string as the second item.
+# Step 27: The re module allows you to use regular expressions in your code. You will learn more about regular expressions very soon. For now, add an import statement at the top of your code to import the re module.
 
+import re
 import secrets
 import string
 
