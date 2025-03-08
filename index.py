@@ -1,4 +1,4 @@
-# Step 23: Modify your function declaration by adding nums, special_chars, uppercase, and lowercase in this order after the existent length parameter.
+# Step 24: Put your password variable declaration and the following for loop inside a while loop. Use True as the condition for your new loop.
 
 import secrets
 import string
@@ -11,12 +11,11 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
     # Combine all characters
     all_characters = letters + digits + symbols
-    password = ''
-    # Generate password
-
-    for _ in range(length):
-        password += secrets.choice(all_characters)
-        return password
+    while True:
+        password = ''
+        # Generate password
+        for _ in range(length):
+            password += secrets.choice(all_characters)
 
 # new_password = generate_password(8)
 # print(new_password)
