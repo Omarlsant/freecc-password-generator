@@ -1,4 +1,4 @@
-# Step 20: Finally, declare a variable new_password and assign it the result of calling generate_password. Pass 8 as the argument to your generate_password call.
+# Step 21: Check the result by printing your new variable.
 
 import secrets
 import string
@@ -19,3 +19,4 @@ def generate_password(length):
         return password
 
 new_password = generate_password(8)
+print(new_password)
