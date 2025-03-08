@@ -1,4 +1,4 @@
-# Step 28: The compile() function from the re module compiles the string passed as the argument into a regular expression object that can be used by other re methods. Declare a new pattern variable and assign the value of re.compile('i') to this variable.
+# Step 29: Declare a variable called quote and assign the string 'Not all those who wander are lost.' to this variable. Then, print the result of pattern.search(quote).
 
 import re
 import secrets
@@ -25,3 +25,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # print(new_password)
 
 pattern = re.compile('i')
+quote = 'Not all those who wander are lost.'
+print(pattern.search(quote))
