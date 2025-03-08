@@ -1,4 +1,4 @@
-# Step 29: Declare a variable called quote and assign the string 'Not all those who wander are lost.' to this variable. Then, print the result of pattern.search(quote).
+# Step 30: Now, modify the string passed to re.compile() into 'l' and see the result.
 
 import re
 import secrets
@@ -24,6 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = re.compile('i')
+pattern = re.compile('l')
 quote = 'Not all those who wander are lost.'
 print(pattern.search(quote))
