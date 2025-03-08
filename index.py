@@ -1,4 +1,4 @@
-# Step 25: After your for loop, create a constraints variable and assign an empty list to this variable.
+# Step 26: Your constraints list is going to store tuples. The first item of each tuple will be a constraint parameter. Modify the constraints list assignment by adding a tuple to your list. Use nums as the first item and an empty string as the second item.
 
 import secrets
 import string
@@ -16,7 +16,9 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         # Generate password
         for _ in range(length):
             password += secrets.choice(all_characters)
-        constraints = []
+        constraints = [
+            (nums, '')
+        ]
 
 # new_password = generate_password(8)
 # print(new_password)
