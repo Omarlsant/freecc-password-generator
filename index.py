@@ -1,4 +1,4 @@
-# Step 30: Now, modify the string passed to re.compile() into 'l' and see the result.
+# Step 31: In your pattern, you can add a quantifier after a character to specify how many times that character should be repeated. Add a + quantifier to your pattern.
 
 import re
 import secrets
@@ -24,6 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = re.compile('l')
+pattern = re.compile('l+')
 quote = 'Not all those who wander are lost.'
 print(pattern.search(quote))
