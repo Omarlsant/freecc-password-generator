@@ -1,4 +1,4 @@
-# Step 35: Now, turn the empty string in the constraint tuple into a regex pattern to match a single digit. Use a character class specifying each digit from 0 to 9.
+# Step 36: Modify your pattern variable to match any letter t preceded by a lowercase letter in the quote variable. Use the range of characters from a to z for that.
 
 import re
 import secrets
@@ -24,6 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = r'w[ha]'
+pattern = r'[a-z]t'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
