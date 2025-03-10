@@ -1,4 +1,4 @@
-# Step 37: Now, modify the pattern in your constraint tuple to indicate the range of all digits using square brackets.
+# Step 38: Add a ^ as the first character inside your character class and see what happens.
 
 import re
 import secrets
@@ -24,6 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = r'[a-z]t'
+pattern = '[^a-z]t'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
