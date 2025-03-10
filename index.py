@@ -1,4 +1,4 @@
-# Step 36: Modify your pattern variable to match any letter t preceded by a lowercase letter in the quote variable. Use the range of characters from a to z for that.
+# Step 37: Now, modify the pattern in your constraint tuple to indicate the range of all digits using square brackets.
 
 import re
 import secrets
@@ -18,7 +18,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         for _ in range(length):
             password += secrets.choice(all_characters)
         constraints = [
-            (nums, '[0123456789]')
+            (nums, '[0-9]')
         ]
 
 # new_password = generate_password(8)
