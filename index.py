@@ -1,4 +1,4 @@
-# Step 38: Add a ^ as the first character inside your character class and see what happens.
+# Step 39: Add a new tuple to the constraints list. Use lowercase as the first item and a regex pattern that matches a single lowercase letter as the second item.
 
 import re
 import secrets
@@ -18,8 +18,9 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         for _ in range(length):
             password += secrets.choice(all_characters)
         constraints = [
-            (nums, '[0-9]')
-        ]
+            (nums, '[0-9]'),
+            (lowercase, '[a-z]')
+        ]      
 
 # new_password = generate_password(8)
 # print(new_password)
