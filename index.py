@@ -1,4 +1,4 @@
-# Step 33: Replace the search() call with findall() and check the output.
+# Step 34: Modify your pattern to match a w followed by either h or a.
 
 import re
 import secrets
@@ -24,6 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = 'l+'
+pattern = r'w[ha]'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
