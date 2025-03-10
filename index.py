@@ -1,4 +1,4 @@
-# Step 32: You can obtain the same result without using the compile() function. Modify your pattern variable into the literal string 'l+'. Then, change the print() call to print re.search(pattern, quote).
+# Step 33: Replace the search() call with findall() and check the output.
 
 import re
 import secrets
@@ -26,4 +26,4 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
 pattern = 'l+'
 quote = 'Not all those who wander are lost.'
-print(re.search(pattern, quote))
+print(re.findall(pattern, quote))
