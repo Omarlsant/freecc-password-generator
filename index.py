@@ -1,4 +1,4 @@
-# Step 34: Modify your pattern to match a w followed by either h or a.
+# Step 35: Now, turn the empty string in the constraint tuple into a regex pattern to match a single digit. Use a character class specifying each digit from 0 to 9.
 
 import re
 import secrets
@@ -18,7 +18,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         for _ in range(length):
             password += secrets.choice(all_characters)
         constraints = [
-            (nums, '')
+            (nums, '[0123456789]')
         ]
 
 # new_password = generate_password(8)
