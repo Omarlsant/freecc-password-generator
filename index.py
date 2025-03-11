@@ -1,4 +1,4 @@
-# Step 41: Add one last tuple to your list. Use the special_chars parameter as the first item and an empty string as the second item.
+# Step 42: The dot character is a wildcard that matches any character in a string — except for a newline character by default. Modify pattern to match the entire string by replacing the current pattern with a . followed by the + quantifier.
 
 import re
 import secrets
@@ -27,6 +27,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = '[^a-z]t'
+pattern = '.+'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
