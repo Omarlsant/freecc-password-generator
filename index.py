@@ -1,4 +1,4 @@
-# Step 45: Now, turn the four patterns from the constraints list into raw strings.
+# Step 46: Replace this character class with the shorthand inside your first constraint tuple.
 
 import re
 import secrets
@@ -18,7 +18,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         for _ in range(length):
             password += secrets.choice(all_characters)
         constraints = [
-            (nums, r'[0-9]'),
+            (nums, r'\d'),
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
             (special_chars, r'')
