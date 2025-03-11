@@ -1,4 +1,4 @@
-# Step 40: Add a third tuple to the constraints list. Use the uppercase parameter as the first item and a regex pattern that matches a single uppercase letter as the second item.
+# Step 41: Add one last tuple to your list. Use the special_chars parameter as the first item and an empty string as the second item.
 
 import re
 import secrets
@@ -20,8 +20,9 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         constraints = [
             (nums, '[0-9]'),
             (lowercase, '[a-z]'),
-            (uppercase, '[A-Z]')
-        ]    
+            (uppercase, '[A-Z]'),
+            (special_chars, '')
+        ]   
 
 # new_password = generate_password(8)
 # print(new_password)
