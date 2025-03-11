@@ -1,4 +1,4 @@
-# Step 46: Replace this character class with the shorthand inside your first constraint tuple.
+# Step 47: Combine the a-z, A-Z, and 0-9 ranges into a single character class and add a ^ as the first character to negate the pattern.
 
 import re
 import secrets
@@ -21,7 +21,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (nums, r'\d'),
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
-            (special_chars, r'')
+            (special_chars, r'[^a-zA-Z0-9]')
         ]  
 
 # new_password = generate_password(8)
