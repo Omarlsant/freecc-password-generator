@@ -1,4 +1,4 @@
-# Step 48: Replace the [^a-zA-Z0-9] character class with \W.
+# Step 49: Now, turn pattern into the shorthand class for non-alphanumeric characters.
 
 import re
 import secrets
@@ -27,6 +27,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = r'\.'
+pattern = r'\W'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
