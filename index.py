@@ -1,4 +1,4 @@
-# Step 43: Modify pattern so that it matches a single literal dot.
+# Step 44: Turn your pattern string into a raw string by prefixing it with a r.
 
 import re
 import secrets
@@ -27,6 +27,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # new_password = generate_password(8)
 # print(new_password)
 
-pattern = '\.'
+pattern = r'\.'
 quote = 'Not all those who wander are lost.'
 print(re.findall(pattern, quote))
