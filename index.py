@@ -1,4 +1,4 @@
-# Step 44: Turn your pattern string into a raw string by prefixing it with a r.
+# Step 45: Now, turn the four patterns from the constraints list into raw strings.
 
 import re
 import secrets
@@ -18,11 +18,11 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         for _ in range(length):
             password += secrets.choice(all_characters)
         constraints = [
-            (nums, '[0-9]'),
-            (lowercase, '[a-z]'),
-            (uppercase, '[A-Z]'),
-            (special_chars, '')
-        ]   
+            (nums, r'[0-9]'),
+            (lowercase, r'[a-z]'),
+            (uppercase, r'[A-Z]'),
+            (special_chars, r'')
+        ]  
 
 # new_password = generate_password(8)
 # print(new_password)
