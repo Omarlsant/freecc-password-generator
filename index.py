@@ -1,4 +1,4 @@
-# Step 49: Now, turn pattern into the shorthand class for non-alphanumeric characters.
+# Step 50: The space characters and the final period are matched, as they are the only non-alphanumeric characters in the string. Now turn your quote string into a single underscore character.
 
 import re
 import secrets
@@ -28,5 +28,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 # print(new_password)
 
 pattern = r'\W'
-quote = 'Not all those who wander are lost.'
+quote = '_'
 print(re.findall(pattern, quote))
