@@ -1,4 +1,4 @@
-# Step 47: Combine the a-z, A-Z, and 0-9 ranges into a single character class and add a ^ as the first character to negate the pattern.
+# Step 48: Replace the [^a-zA-Z0-9] character class with \W.
 
 import re
 import secrets
@@ -21,7 +21,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (nums, r'\d'),
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
-            (special_chars, r'[^a-zA-Z0-9]')
+            (special_chars, r'\W')
         ]  
 
 # new_password = generate_password(8)
