@@ -1,4 +1,4 @@
-# Step 50: The space characters and the final period are matched, as they are the only non-alphanumeric characters in the string. Now turn your quote string into a single underscore character.
+# Step 51: Delete the last three lines in your code.
 
 import re
 import secrets
@@ -26,7 +26,3 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
 
 # new_password = generate_password(8)
 # print(new_password)
-
-pattern = r'\W'
-quote = '_'
-print(re.findall(pattern, quote))
