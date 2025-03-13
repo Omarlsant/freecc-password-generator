@@ -1,4 +1,4 @@
-# Step 51: Delete the last three lines in your code.
+# Step 52: Now, combine your raw string with an f-string and interpolate your symbols variable inside the character class.
 
 import re
 import secrets
@@ -21,7 +21,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (nums, r'\d'),
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
-            (special_chars, r'\W')
+            (special_chars, fr'[{symbols}]')
         ]  
 
 # new_password = generate_password(8)
