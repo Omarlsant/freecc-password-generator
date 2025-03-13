@@ -1,4 +1,4 @@
-# Step 58: Right before your for loop, declare a count variable and assign the value zero to this variable.
+# Step 59: Turn the expression inside your for loop into an if statement. Use the expression you wrote in the previous step as the if condition.
 
 import re
 import secrets
@@ -25,8 +25,8 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         for constraint, pattern in constraints:
-            constraint <= len(re.findall(pattern, password))
-            count = 0
+            if constraint <= len(re.findall(pattern, password)):
+                count = count + 1
 
 # new_password = generate_password(8)
 # print(new_password)
