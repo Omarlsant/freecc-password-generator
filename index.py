@@ -1,4 +1,4 @@
-# Step 55: Inside the for loop, call the findall() function passing pattern and password as the arguments.
+# Step 56: Pass your existent findall() call to the len() function.
 
 import re
 import secrets
@@ -25,7 +25,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         for constraint, pattern in constraints:
-            re.findall(pattern, password)
+            len(re.findall(pattern, password))
 
 # new_password = generate_password(8)
 # print(new_password)
