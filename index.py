@@ -1,4 +1,4 @@
-# Step 52: Now, combine your raw string with an f-string and interpolate your symbols variable inside the character class.
+# Step 53: Below the constraints list, add a comment saying Check constraints.
 
 import re
 import secrets
@@ -22,7 +22,8 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (lowercase, r'[a-z]'),
             (uppercase, r'[A-Z]'),
             (special_chars, fr'[{symbols}]')
-        ]  
+        ]
+        # Check constraints
 
 # new_password = generate_password(8)
 # print(new_password)
