@@ -1,4 +1,4 @@
-# Step 54: After your new comment, write a for loop to iterate over the constraints list. Use constraint and pattern as the loop variables.
+# Step 55: Inside the for loop, call the findall() function passing pattern and password as the arguments.
 
 import re
 import secrets
@@ -25,7 +25,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         for constraint, pattern in constraints:
-            return 
+            re.findall(pattern, password)
 
 # new_password = generate_password(8)
 # print(new_password)
