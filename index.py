@@ -1,4 +1,4 @@
-# Step 57: Inside your for loop, compare constraint and the length of the list returned by findall().
+# Step 58: Right before your for loop, declare a count variable and assign the value zero to this variable.
 
 import re
 import secrets
@@ -26,6 +26,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         # Check constraints
         for constraint, pattern in constraints:
             constraint <= len(re.findall(pattern, password))
+            count = 0
 
 # new_password = generate_password(8)
 # print(new_password)
