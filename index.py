@@ -1,4 +1,4 @@
-# Step 56: Pass your existent findall() call to the len() function.
+# Step 57: Inside your for loop, compare constraint and the length of the list returned by findall().
 
 import re
 import secrets
@@ -25,7 +25,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         for constraint, pattern in constraints:
-            len(re.findall(pattern, password))
+            constraint <= len(re.findall(pattern, password))
 
 # new_password = generate_password(8)
 # print(new_password)
