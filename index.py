@@ -1,4 +1,4 @@
-# Step 68: Modify your function declaration to take default parameters. Use 16 for the length and 1 for the other constraints.
+# Step 69: The arguments that are not explicitly passed to the function call will take their default values. Modify your generate_password() call to take only length=8.
 
 import re
 import secrets
@@ -31,5 +31,5 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             break
     return password
 
-new_password = generate_password(nums=1, length=8, special_chars=1, uppercase=1, lowercase=1)
+new_password = generate_password(length=8)
 print(new_password)
