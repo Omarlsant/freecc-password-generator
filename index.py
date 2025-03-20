@@ -1,4 +1,4 @@
-# Step 65: Now it's time to test your function. Uncomment the last two lines in your code and modify the function call passing 5 arguments.
+# Step 66: It works, but there are still a couple of things you can improve. First of all, calling a function with 5 arguments can create confusion on which value will be assigned to which parameter. Modify your function call to use keyword arguments.
 
 import re
 import secrets
@@ -31,5 +31,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             break
     return password
 
-new_password = generate_password(8, 1, 1, 1, 1)
+new_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)
 print(new_password)
