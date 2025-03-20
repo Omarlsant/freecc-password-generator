@@ -1,4 +1,4 @@
-# Step 61: Replace your existing for loop and two if statements with a single if statement. For the if condition, use a call to the all() function and pass an empty list as the argument to the function call.
+# Step 62: Right now, all() is taking an empty list as the argument. Populate that empty list using the comprehension syntax so that the list stores the results of evaluating the expression constraint, for each constraint-pattern tuple in the constraints list.
 
 import re
 import secrets
@@ -25,7 +25,7 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         count = 0
-        if all([]):
+        if all([constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints]):
             break
     return password
 
