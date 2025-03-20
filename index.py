@@ -1,4 +1,4 @@
-# Step 64: You don't need the count variable anymore. Delete this variable and its value.
+# Step 65: Now it's time to test your function. Uncomment the last two lines in your code and modify the function call passing 5 arguments.
 
 import re
 import secrets
@@ -31,5 +31,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             break
     return password
 
-# new_password = generate_password(8)
-# print(new_password)
+new_password = generate_password(8, 1, 1, 1, 1)
+print(new_password)
