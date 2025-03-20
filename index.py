@@ -1,4 +1,4 @@
-# Step 63: Having all([expression for i in iterable]), means that a new list is created by evaluating expression for each i in iterable. After the all() function iterates over the newly created list, the list is deleted automatically, since it is no longer needed. Change your list comprehension into a generator expression by removing the square brackets.
+# Step 64: You don't need the count variable anymore. Delete this variable and its value.
 
 import re
 import secrets
@@ -24,7 +24,6 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (special_chars, fr'[{symbols}]')
         ]
         # Check constraints
-        count = 0
         if all(
             constraint <= len(re.findall(pattern, password))
                 for constraint, pattern in constraints
