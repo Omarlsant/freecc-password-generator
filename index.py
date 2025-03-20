@@ -1,10 +1,10 @@
-# Step 59: Turn the expression inside your for loop into an if statement. Use the expression you wrote in the previous step as the if condition.
+# Step 72: Finally, put the last two lines of your code inside an if statement that execute when __name__ == '__main__'. In this way, your code won't run when imported as a module. Otherwise, it will call generate_password() and print the generated password.
 
 import re
 import secrets
 import string
 
-def generate_password(length, nums, special_chars, uppercase, lowercase):
+def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase=1):
     # Define the possible characters for the password.
     letters = string.ascii_lowercase
     digits = string.digits
@@ -24,12 +24,13 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             (special_chars, fr'[{symbols}]')
         ]
         # Check constraints
-        count = 0
-        for constraint, pattern in constraints:
-            if constraint <= len(re.findall(pattern, password)):
-                count += 1
-        if count == 4:
+        if all(
+            constraint <= len(re.findall(pattern, password))
+                for constraint, pattern in constraints
+        ):
             break
+    return password
 
-# new_password = generate_password(8)
-# print(new_password)
+if __name__ == '__main__':
+    new_password = generate_password()
+    print('Generated password:', new_password)
