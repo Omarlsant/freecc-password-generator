@@ -1,4 +1,4 @@
-# Step 66: It works, but there are still a couple of things you can improve. First of all, calling a function with 5 arguments can create confusion on which value will be assigned to which parameter. Modify your function call to use keyword arguments.
+# Step 67: As long as all the arguments in a function call are keyword arguments, the order of the arguments doesn't matter. To confirm this, try to change the order of length=8 and nums=1 in your function call.
 
 import re
 import secrets
@@ -31,5 +31,5 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
             break
     return password
 
-new_password = generate_password(length=8, nums=1, special_chars=1, uppercase=1, lowercase=1)
+new_password = generate_password(nums=1, length=8, special_chars=1, uppercase=1, lowercase=1)
 print(new_password)
