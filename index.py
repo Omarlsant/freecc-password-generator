@@ -1,4 +1,4 @@
-# Step 71: Modify your print() call to take the string 'Generated password:' as the first argument, before new_password.
+# Step 72: Finally, put the last two lines of your code inside an if statement that execute when __name__ == '__main__'. In this way, your code won't run when imported as a module. Otherwise, it will call generate_password() and print the generated password.
 
 import re
 import secrets
@@ -31,5 +31,6 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             break
     return password
 
-new_password = generate_password()
-print('Generated password:', new_password)
+if __name__ == '__main__':
+    new_password = generate_password()
+    print('Generated password:', new_password)
