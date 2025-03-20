@@ -1,4 +1,4 @@
-# Step 70: Now, remove all the arguments from your function call.
+# Step 71: Modify your print() call to take the string 'Generated password:' as the first argument, before new_password.
 
 import re
 import secrets
@@ -32,4 +32,4 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
     return password
 
 new_password = generate_password()
-print(new_password)
+print('Generated password:', new_password)
