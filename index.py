@@ -1,4 +1,4 @@
-# Step 62: Right now, all() is taking an empty list as the argument. Populate that empty list using the comprehension syntax so that the list stores the results of evaluating the expression constraint, for each constraint-pattern tuple in the constraints list.
+# Step 63: Having all([expression for i in iterable]), means that a new list is created by evaluating expression for each i in iterable. After the all() function iterates over the newly created list, the list is deleted automatically, since it is no longer needed. Change your list comprehension into a generator expression by removing the square brackets.
 
 import re
 import secrets
@@ -25,7 +25,10 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         count = 0
-        if all([constraint <= len(re.findall(pattern, password)) for constraint, pattern in constraints]):
+        if all(
+            constraint <= len(re.findall(pattern, password))
+                for constraint, pattern in constraints
+        ):
             break
     return password
 
