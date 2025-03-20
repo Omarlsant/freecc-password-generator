@@ -1,4 +1,4 @@
-# Step 69: The arguments that are not explicitly passed to the function call will take their default values. Modify your generate_password() call to take only length=8.
+# Step 70: Now, remove all the arguments from your function call.
 
 import re
 import secrets
@@ -31,5 +31,5 @@ def generate_password(length=16, nums=1, special_chars=1, uppercase=1, lowercase
             break
     return password
 
-new_password = generate_password(length=8)
+new_password = generate_password()
 print(new_password)
