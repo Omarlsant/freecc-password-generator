@@ -1,4 +1,4 @@
-# Step 59: Turn the expression inside your for loop into an if statement. Use the expression you wrote in the previous step as the if condition.
+# Step 61: Replace your existing for loop and two if statements with a single if statement. For the if condition, use a call to the all() function and pass an empty list as the argument to the function call.
 
 import re
 import secrets
@@ -25,11 +25,9 @@ def generate_password(length, nums, special_chars, uppercase, lowercase):
         ]
         # Check constraints
         count = 0
-        for constraint, pattern in constraints:
-            if constraint <= len(re.findall(pattern, password)):
-                count += 1
-        if count == 4:
+        if all([]):
             break
+    return password
 
 # new_password = generate_password(8)
 # print(new_password)
